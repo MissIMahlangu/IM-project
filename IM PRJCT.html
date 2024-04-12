@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+h1 {
+    color: burlywood;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px auto;
+    display: block;
+    color: rgb(86, 86, 98);
+    font-size: 10px;
+    background-color: burlywood;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border-color: burlywood;
+    cursor: pointer;
+    transition: all 200ms ease;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;   
+}
+
+button:hover {
+    background: transparent;
+    color: #1a64d6;
+    transition: all 150ms ease-in-out;
+}
+
+h1:hover,
+h2:hover {
+    color: lightgray;
+}
+h1 {
+    color: burlywood;
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin: 20px auto;
+    display: block;
+    color: rgb(86, 86, 98);
+    font-size: 10px;
+    background-color: burlywood;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border-color: burlywood;
+    cursor: pointer;
+    transition: all 200ms ease;
+    box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;   
+}
+
+button:hover {
+    background: transparent;
+    color: #1a64d6;
+    transition: all 150ms ease-in-out;
+}
+
+h1:hover,
+h2:hover {
+    color: lightgray;
+}
+</style>
+ 
+  <body>
+    <h1>
+        Flowers by I&N
+    </h1>
+
+    <p>
+       <strong>About to be your favourite florist</strong>
+    </p>
+
+    <p>
+    We are besties that turned into co-owners of a flower company.
+    Nothing is as cute as a flower delivery and we saw a gap in our
+    area for this service.
+    We curate bouquets according to the client's budget, color scheme and occasion.
+    We double up as personal shoppers which means we are your go-to for gifting.
+    </p>
+
+    <br />
+    <img src="c:\Users\Itumeleng\Downloads\2806746c-d986-4ded-9c6c-7bf63fff22a2.jpeg" alt="" />
+
+    <button id="email-button">
+        Enter email
+    </button>
+
+<script>
+ let button = document.getElementById("#email-button");
+   button.addEventListener("click", enterEmail);
+
+    function enterEmail() {
+      let email = prompt ("Please enter your email address:");
+
+      if (email) {
+        if (email.endsWith("@gmail.com")) {
+          alert("we will add you to our flower besties mailing!");
+        } else {
+          alert("Please enter a valid Gmail address!");
+        }
+      } else {
+        alert("Email address is required!");
+      }
+    }
+  </script>
+ </body>
+</html>
